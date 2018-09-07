@@ -15,7 +15,22 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script>
+            function myFunction() {
+                var x = document.getElementById("p11").value;
+                console.log(x);
+                document.getElementById("a11_1a2").value = (parseInt(document.getElementById("p11").value)  + 7);
+                document.getElementById("a11_2a3").value =  (parseInt(document.getElementById("p11").value)  + 7);
+                document.getElementById("a11_3a4").value =  (parseInt(document.getElementById("p11").value)  + 7);
+                document.getElementById("a11_4a6").value =  (parseInt(document.getElementById("p11").value)  + 7);
+                document.getElementById("a11_7a12").value =  (parseInt(document.getElementById("p11").value)  + 7);
+                document.getElementById("a11_menor3").value =  (parseInt(document.getElementById("p11").value)  + 7);
+                document.getElementById("a11_menos4").value =  (parseInt(document.getElementById("p11").value)  + 7);
 
+               
+               
+                    }
+            </script>
 </head>
 <body>
     <form runat="server">
@@ -40,7 +55,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,13 +63,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nombre de la aplicación</a>
+                    <a class="navbar-brand" runat="server" href="~/"></a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li runat="server" id="captura"><a runat="server" href="~/Captura">Captura</a></li>
+                        <li><asp:LoginStatus ID="LoginStatus1" runat="server" LogoutPageUrl="~/Default.aspx" OnLoggedOut="LoginStatus1_LoggedOut" LogoutAction="Redirect" /></li>
                     </ul>
                 </div>
             </div>

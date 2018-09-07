@@ -13,5 +13,10 @@ namespace IndexEstadistica
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string dd = TextBox1.Text;
+        }
     }
 }

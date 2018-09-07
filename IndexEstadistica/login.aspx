@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#"  MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="IndexEstadistica._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="login.aspx.cs" Inherits="IndexEstadistica.login" %>
 
 <asp:Content  ContentPlaceHolderID="MainContent" runat="server">
    
@@ -14,21 +14,21 @@
             <!-- Wrapper for carousel items -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="img/estadisticas2.jpg" alt="First Slide">
+                    <img src="img/HR_Foto_Ninos_3.jpg" alt="First Slide">
                      <div class="carousel-caption">
-                      <%--  <h3>Bienvenidos a Fundación Index Chihuahua</h3>
+                        <h3>Bienvenidos a Fundación Index Chihuahua</h3>
                         <p>Organización sin fines de lucro dedicada a realizar programas sociales<br />
                          en beneficio de los colaboradores de la industria manufacturera de exportación
-                         <br />y de la comunidad Chihuahuense en general.  </p>--%>
+                         <br />y de la comunidad Chihuahuense en general.  </p>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="img/estadisticas.jpg" alt="Second Slide">
-                   <div class="carousel-caption">
-                        <%-- <h3>Bienvenidos a Fundación Index Chihuahua</h3>
+                    <img src="img/HR_FotoNinos_2.jpg" alt="Second Slide">
+                     <div class="carousel-caption">
+                         <h3>Bienvenidos a Fundación Index Chihuahua</h3>
                         <p>Organización sin fines de lucro dedicada a realizar programas sociales<br />
                          en beneficio de los colaboradores de la industria manufacturera de exportación
-                         <br />y de la comunidad Chihuahuense en general.  </p>--%>
+                         <br />y de la comunidad Chihuahuense en general.  </p>
                     </div>
                 </div>
                 
@@ -78,7 +78,7 @@
                                  </tr>
                                  <tr>
                                      <td colspan="2">
-                                         <asp:CheckBox ID="RememberMe" runat="server" Text="Recordármelo la próxima vez." />
+                                         <asp:CheckBox ID="RememberMe"  runat="server" Text="Recordármelo la próxima vez." />
                                      </td>
                                  </tr>
                                  <tr>
@@ -88,7 +88,7 @@
                                  </tr>
                                  <tr>
                                      <td align="right" colspan="2">
-                                         <asp:Button ID="LoginButton" runat="server" CssClass="form-control" CommandName="Login" Text="Inicio de sesión" ValidationGroup="Login1" />
+                                         <asp:Button ID="LoginButton" runat="server" CssClass="btn btn-primary" CommandName="Login" Text="Inicio de sesión" ValidationGroup="Login1" />
                                      </td>
                                  </tr>
                              </table>

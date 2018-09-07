@@ -11,7 +11,17 @@ namespace IndexEstadistica
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["user_name"] != null) {
+                captura.Visible = true;
+            }
+            else {
+                captura.Visible = false;
+            }
+        }
 
+        protected void LoginStatus1_LoggedOut(object sender, EventArgs e)
+        {
+            Session.Remove("user_name");
         }
     }
 }
